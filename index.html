@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Sponsorship Account Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sponsorship Account</h1>
+        <p class="subtext">Select Your Business Name</p>
+        <div class="center-container">
+            <div class="dropdown-container">
+                <select id="company-dropdown">
+                    <option value="" selected disabled>Select a company</option>
+                    <!-- Options will be added dynamically here -->
+                </select>
+            </div>
+        </div>
+        <div class="total" id="total">Total Funds: $0.00</div>
+        <div class="button-container">
+            <button class="button add-button" onclick="addFunds()">Add Funds</button>
+            <button class="button subtract-button" onclick="subtractFunds()">Subtract Funds</button>
+        </div>
+    </div>
+    <script src="./script/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!--
+
+Controller For API Data from Google Sheets
+
+Deployment ID: AKfycbzemzCByJoL1U1r2gFLSjyL-VnSGmwF4TD9A-z86o06f1Z4CasV1mfyB6GyD0rY2K0Keg
+
+URL: https://script.google.com/macros/s/AKfycbzemzCByJoL1U1r2gFLSjyL-VnSGmwF4TD9A-z86o06f1Z4CasV1mfyB6GyD0rY2K0Keg/exec
+
+-->
