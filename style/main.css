@@ -2,11 +2,19 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 3.125em; /* 50px / 16px */
+    background-color: #F5F5F5; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
+    color: #333333; /* Dark gray text */
     max-width: 37.5em; /* 600px / 16px */
     margin: 0 auto;
+    margin-top: 5em;
     padding: 2.5em; /* 40px / 16px */
     border: 0.0625em solid #ddd; /* 1px / 16px */
     border-radius: 0.625em; /* 10px / 16px */
@@ -14,13 +22,14 @@ body {
 }
 
 h1 {
+    color: #333333; /* Dark gray text */
     font-size: 3em;
     margin-bottom: 0.8em; /* 20px / 16px */
 }
 
 .subtext {
+    color: #777777; /* Medium gray text */
     font-size: 1.5em;
-    color: #666;
     margin-bottom: 0.8em; /* 30px / 16px */
 }
 
@@ -123,5 +132,51 @@ h1 {
 /* Styles for the placeholder option */
 #company-dropdown option:first-child {
     color: #888888; /* Light gray text for placeholder */
+}
+
+
+/* Footer styling */
+.footer {
+    background-color: #D3D3D3; /* Light gray background */
+    padding: 10px 0;
+    color: #333333; /* Dark text color */
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: auto; /* Push footer to the bottom */
+    height: 5em;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; /* Center items vertically within the footer */
+    gap: 10px; /* Space between the logo and the text */
+}
+
+.footer-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin: 0; /* Remove default margin */
+}
+
+/* Logo styling */
+.logo-container {
+    position: absolute;
+    top: 20px; /* Distance from the top */
+    left: 30px; /* Distance from the left */
+}
+
+.logo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+
+.header {
+    height: 6em;
 }
 
